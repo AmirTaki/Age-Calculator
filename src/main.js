@@ -1,5 +1,7 @@
 let userInput = document.getElementById('date')
 userInput.max = new Date().toDateString().split("T")[0]
+let result = document.getElementById('result')
+let button = document.querySelector('button')
 
 const calculateAge = () => {
     let birthDate = new Date(userInput.value)
@@ -41,9 +43,11 @@ const calculateAge = () => {
         y3-- ;
     }
 
-    console.log(y3, m3, d3)
+    result.innerHTML = `You are ${y3} years, ${m3} months and ${d3} days old`;
 }
 
 function getDaysInMonth (year, month){
     return new Date(year, month, 0).getDate()
 }
+
+// 
