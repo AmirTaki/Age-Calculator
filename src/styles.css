@@ -58,3 +58,14 @@
     color : #333;
     cursor: pointer;
 }
+.input-box input::-webkit-calendar-picker-indicator{
+    top : 12px;
+    left : 0 ;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: auto;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
